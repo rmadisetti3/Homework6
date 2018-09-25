@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+h1 {
+    background-color: purple;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 10;
+}
+input {
+    border-radius: 5px;
+    border: solid;
+    border-color: purple;
+    font-weight: bold;
+    position: relative;
+    margin: 45px;
+    width: 75%;
+}
+#arrow {
+    position: relative;
+    left: 360px;
+    bottom: 65px;
+}

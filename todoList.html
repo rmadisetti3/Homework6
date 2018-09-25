@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>To Do List</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/todoList.js"></script>
+    <style>
+        body {
+    margin: 0;
+}
+h1 {
+    background-color: purple;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 10;
+}
+input {
+    border-radius: 5px;
+    border: solid;
+    border-color: purple;
+    font-weight: bold;
+    position: relative;
+    margin: 45px;
+    width: 75%;
+}
+#arrow {
+    position: relative;
+    left: 360px;
+    bottom: 63px;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Raj's To Do List</h1>
+    <div></div>
+    <section>
+        <form action="/api/todoList" method="POST">
+            <input type="text" id="add-todo" placeholder="Add a new to do" autocomplete="off" />
+            <a href="/api/todoList"><i id="arrow" class="fas fa-arrow-alt-circle-right"></i></a>
+        </form>
+        <div id="content"></div>
+        <div id="todoList"></div>
+    </section>
+</body>
+
+</html>
